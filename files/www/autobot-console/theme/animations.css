@@ -1,0 +1,17 @@
+.pixel-rotate-animation {
+  display: inline-block; /* REQUIRED or rotation won’t apply correctly */
+  width: 1em;
+  height: 1em;
+
+  transform-origin: 50% 50%;
+  animation: spin 8s steps(16, end) infinite;
+  will-change: transform;
+
+  image-rendering: pixelated; /* helps if bg is raster */
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

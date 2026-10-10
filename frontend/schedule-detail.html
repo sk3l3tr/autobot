@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="language" content="es" />
+    <meta name="author" content="SK3L3TØR" />
+
+    <title>AUTØBØT | Schedule Detail</title>
+
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="/index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="app-header"></div>
+    <main class="main-body schedule-detail" data-page="schedule-detail">
+      <section class="schedule-detail__card pixel-card pixel-card--modal">
+        <form id="schedule-detail-form" class="pixel-form pixel-form--grid">
+          <div class="pixel-field span-2">
+            <label for="detail-id">Identifier *</label>
+            <input
+              id="detail-id"
+              name="id"
+              class="pixel-input"
+              type="text"
+              maxlength="120"
+              required
+            />
+            <span class="pixel-helper"
+              >This value becomes the schedule ID and cannot be edited
+              later.</span
+            >
+          </div>
+          <div class="pixel-field">
+            <label for="detail-robot">Robot *</label>
+            <div class="pixel-field__controls">
+              <select
+                id="detail-robot"
+                name="name"
+                class="pixel-select"
+                required
+              >
+                <option value="" disabled selected>Loading robots...</option>
+              </select>
+              <button
+                type="button"
+                class="btn secondary btn-icon"
+                title="Create robot"
+                aria-label="Create robot"
+              >
+                <span id="detail-create-robot" class="i i-add_box"></span>
+              </button>
+            </div>
+          </div>
+          <div class="pixel-field">
+            <label for="detail-trigger">Trigger *</label>
+            <select
+              id="detail-trigger"
+              name="trigger"
+              class="pixel-select"
+              required
+            >
+              <option value="date">Run on date</option>
+              <option value="interval">Interval</option>
+            </select>
+          </div>
+          <div id="detail-date-fields" class="pixel-field">
+            <label for="detail-run-date">Run Date *</label>
+            <input
+              id="detail-run-date"
+              name="run_date"
+              class="pixel-input"
+              type="datetime-local"
+            />
+          </div>
+          <div
+            id="detail-interval-fields"
+            class="pixel-field span-2 schedule-detail__interval-grid"
+            hidden
+          >
+            <div class="pixel-field">
+              <label for="detail-days">Days</label>
+              <input
+                id="detail-days"
+                name="days"
+                class="pixel-input"
+                type="number"
+                min="0"
+                step="1"
+                value="0"
+              />
+            </div>
+            <div class="pixel-field">
+              <label for="detail-hours">Hours</label>
+              <input
+                id="detail-hours"
+                name="hours"
+                class="pixel-input"
+                type="number"
+                min="0"
+                step="1"
+                value="0"
+              />
+            </div>
+            <div class="pixel-field">
+              <label for="detail-minutes">Minutes</label>
+              <input
+                id="detail-minutes"
+                name="minutes"
+                class="pixel-input"
+                type="number"
+                min="0"
+                step="1"
+                value="0"
+              />
+            </div>
+            <span class="pixel-helper" style="grid-column: 1 / -1"
+              >Provide a positive interval (at least one field must be greater
+              than zero).</span
+            >
+          </div>
+          <div class="schedule-detail__actions span-2">
+            <button type="submit" class="btn primary" id="detail-submit">
+              Save
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <!-- <div id="app-footer"></div> -->
+
+    <script type="module" src="/src/main.js"></script>
+    <script src="/scripts/config/app-config.js"></script>
+  </body>
+</html>

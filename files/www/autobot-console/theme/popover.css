@@ -1,0 +1,34 @@
+.popover-anchor {
+  anchor-name: --pop-anchor;
+}
+
+.popover-menu {
+  /* position-anchor: --pop-anchor; */
+
+  position: absolute;
+  top: anchor(top);
+  left: anchor(right);
+  margin: 0 0 0 1rem;
+  overflow: visible;
+  background: var(--text);
+}
+
+.popover-menu span:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.popover-menu::before {
+  content: "";
+  position: absolute;
+
+  width: 10px;
+  height: 10px;
+
+  background: var(--text);
+
+  left: -5px;
+  top: 2px;
+
+  transform: rotate(45deg);
+}

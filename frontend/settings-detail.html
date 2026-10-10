@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="language" content="es" />
+    <meta name="author" content="SK3L3TØR" />
+
+    <title>AUTØBØT | Settings Detail</title>
+
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="/index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="app-header"></div>
+    <main class="main-body settings-detail" data-page="settings-detail">
+      <section class="settings-detail__card pixel-card pixel-card--modal">
+        <div class="settings-detail__header">
+          <div>
+            <h1 id="settings-detail-title">Settings</h1>
+            <p id="settings-detail-description" class="muted"></p>
+          </div>
+        </div>
+
+        <form id="settings-detail-form" class="pixel-form">
+          <div
+            id="settings-detail-fields"
+            class="settings-detail__blocks"
+          ></div>
+          <div class="settings-detail__actions">
+            <p
+              id="settings-detail-feedback"
+              class="settings-detail__feedback muted"
+            ></p>
+            <button type="submit" class="btn primary" id="settings-detail-save">
+              Save
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+    <script src="/scripts/config/app-config.js"></script>
+  </body>
+</html>

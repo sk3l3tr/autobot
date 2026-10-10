@@ -1,0 +1,17 @@
+:root {
+  --bg: #02030a;
+  --bg-deep: #050016;
+  --bg-alt: #050018;
+
+  --primary: #ff0080;
+  --secondary: #00f6ff;
+  --accent: #7a00ff;
+
+  --text: #f5f5f7;
+  --text-muted: #b0b3c7;
+  --text-disabled: #6b6f86;
+
+  --card: #0b0618;
+  --card-hover: #140a24;
+  --border-soft: #26253a;
+}

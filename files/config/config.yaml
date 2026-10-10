@@ -1,0 +1,76 @@
+- blocks:
+    - id: block
+      options:
+        - description: Schedule database changes frequency check (minutes).
+          id: DIGEST_FILE_FREQUENCY
+          label: Frequency (min)
+          max: 60
+          min: 0
+          type: number
+          value: "5"
+        - description: Tiempo (segundos) de tolerancia para misfires de jobs.
+          id: MISFIRE_GRACE_TIME
+          label: Misfire grace time (min)
+          min: 0
+          type: number
+          value: 5
+  description:
+    Configure the schedule refresh frequency (min) and the misfire grace
+    time (min).
+  id: SCHEDULE
+  label: Schedule
+- blocks:
+    - id: block
+      options:
+        - description: Your webhook API key
+          id: WEBHOOK_API_KEY
+          label: API key
+          type: text
+          value: null
+        - description: Your webhook token
+          id: WEBHOOK_TOKEN
+          label: Token
+          type: text
+          value: null
+        - description: Switch on/off the webhook behaviour and functions
+          id: WEBHOOK_ACTIVE
+          label: Webhook ON/OFF
+          type: boolean
+          value: false
+  description:
+    Automate your trading strategy by integrating external systems with
+    Autobot using webhooks.
+  id: WEBHOOK
+  label: Webhook
+- blocks:
+    - id: block
+      label: HTTP Server
+      options:
+        - description: Enable/disable HTTP server debug mode.
+          id: SERVER_DEBUG_ENABLED
+          label: Server debug enabled
+          type: boolean
+          value: false
+        - description: The HTTP server port.
+          id: SERVER_PORT
+          label: Server port
+          type: number
+          value: 5555
+    - id: block
+      label: SSCA
+      options:
+        - description: SSCA server (Server Socket Communication Agent)
+          id: SSCA_HOST
+          label: SSCA host
+          type: text
+          value: 127.0.0.1
+        - description: SSCA port (Server Socket Communication Agent)
+          id: SSCA_PORT
+          label: SSCA port
+          type: text
+          value: 65432
+  description:
+    The internal configuration for the app. Just for advanced users, techies
+    and Support Team.
+  id: ADVANCED
+  label: Advanced

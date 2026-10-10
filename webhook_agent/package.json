@@ -1,0 +1,39 @@
+{
+  "name": "webhook_agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "dev": "npm run build && ts-node src/index.ts",
+    "bundle": "npm run build && pkg . --out-path dist",
+    "deploy:local": "npm run bundle && shx rm -rf ../files/bin/* && shx cp -r dist/webhook_agent* ../files/bin"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "@types/socket.io-client": "^1.4.36",
+    "pkg": "^5.8.1",
+    "shx": "^0.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "laravel-echo": "^1.16.1",
+    "socket.io-client": "^2.5.0",
+    "winston": "^3.17.0"
+  },
+  "pkg": {
+    "targets": [
+      "node18-linux-x64",
+      "node18-macos-x64",
+      "node18-win-x64"
+    ],
+    "outputPath": "dist"
+  }
+}

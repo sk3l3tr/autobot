@@ -1,0 +1,72 @@
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+/build
+/spec
+Autobot.spec
+distribution
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Agents
+.agents
+skills-lock.json
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+files/logs/*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# CLI
+autobot.egg-info
+
+# Frontend
+node_modules/*
+frontend/.angular/
+frontend/package-lock.json
+frontend/node_modules/
+frontend/dist/
+frontend/.vscode
+
+# Python
+__pycache__/
+
+# Webhook
+files/bin/*
+webhook_agent/package-lock.json
+webhook_agent/dist/
+webhook_agent/node_modules/
+

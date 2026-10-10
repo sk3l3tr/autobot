@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Doto";
+  src: url("/fonts/Doto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.doto {
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+}
