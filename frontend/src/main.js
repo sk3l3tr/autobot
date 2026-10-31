@@ -1,5 +1,5 @@
-import { bootstrapDemiurge } from "@n0m4d-d3v/demiurgejs";
-import "@n0m4d-d3v/demiurgejs/style.css";
+import { bootstrapDemiurge } from "@sk3l3tr/demiurgejs";
+import "@sk3l3tr/demiurgejs/style.css";
 
 window.PageConfig = {
   layout: {

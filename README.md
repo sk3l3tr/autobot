@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/N0M4D-D3V/autobot">
+  <a href="https://github.com/sk3l3tr/autobot">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="resources/icon_dark.png">
       <source media="(prefers-color-scheme: light)" srcset="resources/icon.png">

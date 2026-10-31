@@ -26,6 +26,7 @@ yarn-error.log
 
 # Agents
 .agents
+.serena/
 skills-lock.json
 
 # Visual Studio Code
