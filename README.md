@@ -81,7 +81,7 @@ autobot write my_robot
 You can send a cURL request to webhook to emulate a request and test the flow. This is just an example, you can send and test any kind of available action.
 
 ```
-curl -X 'POST' 'https://webhook.site/Billions' -H 'content-length: 52' -H 'content-type: application/json' -H 'authorization: Bearer 8056902b-834c-4d6c-acfc-d6c43835d966' -H 'accept: */*' -H 'user-agent: curl/8.7.1' -H 'host: webhook.site' -d $'{"action": "run_robot", "kwargs": {"name": "my_robot"}}'
+curl -X 'POST' 'https://webhook.site/Billions' -H 'content-length: 52' -H 'content-type: application/json' -H 'authorization: Bearer <TOKEN_DE_EJEMPLO>' -H 'accept: */*' -H 'user-agent: curl/8.7.1' -H 'host: webhook.site' -d $'{"action": "run_robot", "kwargs": {"name": "my_robot"}}'
 ```
 
 ### nc
